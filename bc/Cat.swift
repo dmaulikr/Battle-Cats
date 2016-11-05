@@ -1,6 +1,6 @@
 
 struct Cat {
-
+  
   class Rocket: MinMax { let power = 50 }
   
   enum Status { case alive, dead }
@@ -12,9 +12,9 @@ struct Cat {
   
   rocket =  Rocket(min: 0, max: 5),
   lives  =  MinMax(min: 0, max: 9),
-  hp     =  MinMax(min: 0, max: 50)
+  hp     =  MinMax(min: -999, max: 50)
   
-   let
+  let
   AP    = 40,
   DEF   = 20,
   MAXHP = 50
@@ -30,7 +30,6 @@ struct Cat {
   
   mutating func takeDamage(amount: Int){
     hp.c -= amount
-
     if hp.c    <= 0 { lives.c -= 1 }
     if lives.c <= 0 { status = .dead }
   }

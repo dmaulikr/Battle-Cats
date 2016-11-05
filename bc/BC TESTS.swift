@@ -14,10 +14,12 @@ class bc: XCTestCase {
   /// Test death
   func testTakeDamage() {
     var boots = Cat(name: "boots")
-    
-  
-  
+    boots.lives.c = 1
+    boots.takeDamage(500)
+    XCTAssert(boots.lives.c == 0)
+    XCTAssert(boots.status == Cat.Status.dead)
   }
+  
   /// Rockets firing and out of ammo
   func testFireRocket() {
     
