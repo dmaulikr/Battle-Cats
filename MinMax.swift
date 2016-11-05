@@ -1,9 +1,8 @@
 //
 //
 //
-import Foundation
 
-let x = NSError(coder: NSCoder())
+
 class MinMax {
   
   // Stay procedural :) but mutable!! glorious mutability!!

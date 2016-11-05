@@ -23,7 +23,24 @@ class bc: XCTestCase {
         super.tearDown()
     }
   
-    // Get through the whole thing without bad access
+  
+  func testFireRocket() {
+    var boots = Cat(name: "boots")
+    var fluffy = Cat(name: "fluffy")
+   
+    let initialHP = fluffy.hp.c
+    
+    boots.fireRocket(at: &fluffy)
+    
+    let secondHP = fluffy.hp.c
+    
+  
+    XCTAssert(secondHP < initialHP)
+    
+  }
+  
+  
+  /// Get through the whole thing without bad access
     func testMinMaxCrashes() {
    
       // Init 1
@@ -47,5 +64,5 @@ class bc: XCTestCase {
       let finished = true; XCTAssert(finished)
     }
   
-    
 }
+

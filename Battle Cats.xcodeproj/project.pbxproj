@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		C12327BA1DCDFFDA005F9F9E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12327B91DCDFFDA005F9F9E /* main.swift */; };
 		C12327C11DCE0070005F9F9E /* MinMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12327C01DCE0070005F9F9E /* MinMax.swift */; };
-		C12327C91DCE00C7005F9F9E /* MinMax Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12327C81DCE00C7005F9F9E /* MinMax Test.swift */; };
+		C12327C91DCE00C7005F9F9E /* BC TESTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12327C81DCE00C7005F9F9E /* BC TESTS.swift */; };
 		C12327CE1DCE0126005F9F9E /* MinMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12327C01DCE0070005F9F9E /* MinMax.swift */; };
 		C12327D01DCE0150005F9F9E /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12327CF1DCE0150005F9F9E /* Cat.swift */; };
 		C12327D11DCE0150005F9F9E /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12327CF1DCE0150005F9F9E /* Cat.swift */; };
@@ -32,7 +32,7 @@
 		C12327B91DCDFFDA005F9F9E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C12327C01DCE0070005F9F9E /* MinMax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MinMax.swift; path = ../MinMax.swift; sourceTree = "<group>"; };
 		C12327C61DCE00C7005F9F9E /* bc.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bc.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C12327C81DCE00C7005F9F9E /* MinMax Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MinMax Test.swift"; sourceTree = "<group>"; };
+		C12327C81DCE00C7005F9F9E /* BC TESTS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BC TESTS.swift"; sourceTree = "<group>"; };
 		C12327CA1DCE00C7005F9F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C12327CF1DCE0150005F9F9E /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cat.swift; path = ../bc/Cat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +86,7 @@
 		C12327C71DCE00C7005F9F9E /* BC Test */ = {
 			isa = PBXGroup;
 			children = (
-				C12327C81DCE00C7005F9F9E /* MinMax Test.swift */,
+				C12327C81DCE00C7005F9F9E /* BC TESTS.swift */,
 				C12327CA1DCE00C7005F9F9E /* Info.plist */,
 			);
 			name = "BC Test";
@@ -193,7 +193,7 @@
 			files = (
 				C12327CE1DCE0126005F9F9E /* MinMax.swift in Sources */,
 				C12327D11DCE0150005F9F9E /* Cat.swift in Sources */,
-				C12327C91DCE00C7005F9F9E /* MinMax Test.swift in Sources */,
+				C12327C91DCE00C7005F9F9E /* BC TESTS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,9 +22,11 @@ struct Cat {
   init(name: String){self.name = name }
   
   mutating func fireRocket(inout at victim: Cat) {
+    let initialHP = victim.hp.c
     rocket.c -= 1
     let dmg_amount = (AP-victim.DEF)
     victim.takeDamage(dmg_amount)
+    //assert(victim.hp.c < initialHP)
     // Do SKNode stuff here...
   }
   
