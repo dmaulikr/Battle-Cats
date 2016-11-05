@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C12327BA1DCDFFDA005F9F9E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12327B91DCDFFDA005F9F9E /* main.swift */; };
+		C12327C11DCE0070005F9F9E /* MinMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12327C01DCE0070005F9F9E /* MinMax.swift */; };
+		C12327C91DCE00C7005F9F9E /* MinMax Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12327C81DCE00C7005F9F9E /* MinMax Test.swift */; };
+		C12327CE1DCE0126005F9F9E /* MinMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12327C01DCE0070005F9F9E /* MinMax.swift */; };
+		C12327D01DCE0150005F9F9E /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12327CF1DCE0150005F9F9E /* Cat.swift */; };
+		C12327D11DCE0150005F9F9E /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12327CF1DCE0150005F9F9E /* Cat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +30,22 @@
 /* Begin PBXFileReference section */
 		C12327B61DCDFFD9005F9F9E /* Battle Cats */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Battle Cats"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12327B91DCDFFDA005F9F9E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C12327C01DCE0070005F9F9E /* MinMax.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MinMax.swift; path = ../MinMax.swift; sourceTree = "<group>"; };
+		C12327C61DCE00C7005F9F9E /* bc.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bc.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12327C81DCE00C7005F9F9E /* MinMax Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MinMax Test.swift"; sourceTree = "<group>"; };
+		C12327CA1DCE00C7005F9F9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C12327CF1DCE0150005F9F9E /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cat.swift; path = ../bc/Cat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C12327B31DCDFFD9005F9F9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12327C31DCE00C7005F9F9E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				C12327B81DCDFFD9005F9F9E /* Battle Cats */,
+				C12327C71DCE00C7005F9F9E /* BC Test */,
 				C12327B71DCDFFD9005F9F9E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				C12327B61DCDFFD9005F9F9E /* Battle Cats */,
+				C12327C61DCE00C7005F9F9E /* bc.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +77,20 @@
 			isa = PBXGroup;
 			children = (
 				C12327B91DCDFFDA005F9F9E /* main.swift */,
+				C12327CF1DCE0150005F9F9E /* Cat.swift */,
+				C12327C01DCE0070005F9F9E /* MinMax.swift */,
 			);
 			path = "Battle Cats";
+			sourceTree = "<group>";
+		};
+		C12327C71DCE00C7005F9F9E /* BC Test */ = {
+			isa = PBXGroup;
+			children = (
+				C12327C81DCE00C7005F9F9E /* MinMax Test.swift */,
+				C12327CA1DCE00C7005F9F9E /* Info.plist */,
+			);
+			name = "BC Test";
+			path = bc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +113,23 @@
 			productReference = C12327B61DCDFFD9005F9F9E /* Battle Cats */;
 			productType = "com.apple.product-type.tool";
 		};
+		C12327C51DCE00C7005F9F9E /* bc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C12327CB1DCE00C7005F9F9E /* Build configuration list for PBXNativeTarget "bc" */;
+			buildPhases = (
+				C12327C21DCE00C7005F9F9E /* Sources */,
+				C12327C31DCE00C7005F9F9E /* Frameworks */,
+				C12327C41DCE00C7005F9F9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bc;
+			productName = bc;
+			productReference = C12327C61DCE00C7005F9F9E /* bc.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +141,9 @@
 				ORGANIZATIONNAME = "Dude Guy ";
 				TargetAttributes = {
 					C12327B51DCDFFD9005F9F9E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					C12327C51DCE00C7005F9F9E = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -110,16 +161,39 @@
 			projectRoot = "";
 			targets = (
 				C12327B51DCDFFD9005F9F9E /* Battle Cats */,
+				C12327C51DCE00C7005F9F9E /* bc */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C12327C41DCE00C7005F9F9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C12327B21DCDFFD9005F9F9E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C12327C11DCE0070005F9F9E /* MinMax.swift in Sources */,
+				C12327D01DCE0150005F9F9E /* Cat.swift in Sources */,
 				C12327BA1DCDFFDA005F9F9E /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C12327C21DCE00C7005F9F9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C12327CE1DCE0126005F9F9E /* MinMax.swift in Sources */,
+				C12327D11DCE0150005F9F9E /* Cat.swift in Sources */,
+				C12327C91DCE00C7005F9F9E /* MinMax Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +296,28 @@
 			};
 			name = Release;
 		};
+		C12327CC1DCE00C7005F9F9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = bc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ziggly.bc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C12327CD1DCE00C7005F9F9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = bc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Ziggly.bc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -241,6 +337,16 @@
 				C12327BF1DCDFFDA005F9F9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C12327CB1DCE00C7005F9F9E /* Build configuration list for PBXNativeTarget "bc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C12327CC1DCE00C7005F9F9E /* Debug */,
+				C12327CD1DCE00C7005F9F9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
