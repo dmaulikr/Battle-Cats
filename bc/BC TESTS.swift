@@ -23,14 +23,17 @@ class bc: XCTestCase {
   /// Rockets firing and out of ammo
   func testFireRocket() {
     
-    // Rockets fire
+    // Rockets fire (victim hp lower)
     var boots = Cat(name: "boots")
     var fluffy = Cat(name: "fluffy")
+    var initialRockets = boots.rocket.c
     var initialHP = fluffy.hp.c
     boots.fireRocket(at: &fluffy)
     XCTAssert(fluffy.hp.c < initialHP)
+    XCTAssert(boots.rocket.c < initialRockets)
     
-    // Rockets don't fire
+    
+    // Rockets don't fire (victim hp not lower)
     boots.rocket.c = 0
     initialHP = fluffy.hp.c
     boots.fireRocket(at: &fluffy)

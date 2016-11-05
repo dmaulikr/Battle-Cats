@@ -23,7 +23,7 @@ struct Cat {
   
   mutating func fireRocket(inout at victim: Cat) {
     if rocket.c > 0 {rocket.c -= 1} else { return }
-    let dmg_amount = (AP-victim.DEF)
+    let dmg_amount = (rocket.power-victim.DEF)
     victim.takeDamage(dmg_amount)
     // Do SKNode stuff here...
   }
@@ -33,4 +33,14 @@ struct Cat {
     if hp.c    <= 0 { lives.c -= 1 }
     if lives.c <= 0 { status = .dead }
   }
+}
+
+struct Shop {
+  
+  
+  var items
+  
+  
+  func addItem(item:_, quantity:_, price:_){}
+
 }
