@@ -22,16 +22,15 @@ struct Cat {
   init(name: String){self.name = name }
   
   mutating func fireRocket(inout at victim: Cat) {
-    let initialHP = victim.hp.c
-    rocket.c -= 1
+    if rocket.c > 0 {rocket.c -= 1} else { return }
     let dmg_amount = (AP-victim.DEF)
     victim.takeDamage(dmg_amount)
-    //assert(victim.hp.c < initialHP)
     // Do SKNode stuff here...
   }
   
   mutating func takeDamage(amount: Int){
-    hp.c       -= amount
+    hp.c -= amount
+
     if hp.c    <= 0 { lives.c -= 1 }
     if lives.c <= 0 { status = .dead }
   }

@@ -10,32 +10,29 @@ import XCTest
 
 class bc: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-      
-      // Put setup code here. 
-      // This method is called before the invocation of each test method in the class.
-    }
+  
+  /// Test death
+  func testTakeDamage() {
+    var boots = Cat(name: "boots")
     
-    override func tearDown() {
-        // Put teardown code here.
-        //This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
   
   
+  }
+  /// Rockets firing and out of ammo
   func testFireRocket() {
+    
+    // Rockets fire
     var boots = Cat(name: "boots")
     var fluffy = Cat(name: "fluffy")
-   
-    let initialHP = fluffy.hp.c
-    
+    var initialHP = fluffy.hp.c
     boots.fireRocket(at: &fluffy)
+    XCTAssert(fluffy.hp.c < initialHP)
     
-    let secondHP = fluffy.hp.c
-    
-  
-    XCTAssert(secondHP < initialHP)
+    // Rockets don't fire
+    boots.rocket.c = 0
+    initialHP = fluffy.hp.c
+    boots.fireRocket(at: &fluffy)
+    XCTAssert(fluffy.hp.c == initialHP)
     
   }
   
@@ -63,6 +60,20 @@ class bc: XCTestCase {
       
       let finished = true; XCTAssert(finished)
     }
+  
+  override func setUp() {
+        super.setUp()
+      
+      // Put setup code here. 
+      // This method is called before the invocation of each test method in the class.
+    }
+    
+    override func tearDown() {
+        // Put teardown code here.
+        //This method is called after the invocation of each test method in the class.
+        super.tearDown()
+    }
+  
   
 }
 
